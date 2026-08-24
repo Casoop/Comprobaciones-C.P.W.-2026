@@ -87,6 +87,7 @@ h1, h2, h3 {
     text-decoration: none; /*Quita el la linea inflerior del link*/
     text-transform: uppercase;
     color: black;
+    transition: 0.25s ease;
 }
 
 .menu-principal a:hover {
@@ -94,6 +95,7 @@ h1, h2, h3 {
     border-radius: 0.8rem;
     background-color: #F1EAE0;
     color: #A6572F;
+    
 }
 
 #portada {
@@ -119,11 +121,14 @@ h1, h2, h3 {
     text-decoration: none;
     background-color: #A6572F;
     color: white;
+    transition: 0.25s ease;
+    
 }
 
 .boton:hover {
     background-color: white;
     color: #A6572F;
+    transform: scale(1.1);
 }
 
 .boton:focus {
@@ -138,6 +143,7 @@ h1, h2, h3 {
 .boton-secundario:hover {
     background-color: black;
     color: #c0bab3;
+    transform: scale(1.1);
 }
 
 .rejilla-servicios {
