@@ -1,0 +1,38 @@
+/*Reinicio de estilos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Evita que el contenido de la pagina se desborde*/
+}
+
+html {
+    font-size: 61.1%;/*Permite que 1rem sea equivalente a 10px*/
+}
+
+input, button, textarea, select {
+    font: inherit; /*Permite que las secciones mencionadas hereden la fuente utilizada*/
+}
+
+/*Tamaños de texto: Títulos*/
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.0rem;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+}
