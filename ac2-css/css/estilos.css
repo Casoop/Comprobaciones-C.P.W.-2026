@@ -130,6 +130,16 @@ h1, h2, h3 {
     outline: 3px dashed white;
 }
 
+.boton-secundario {
+    background-color: #c0bab3;
+    color: black;
+}
+
+.boton-secundario:hover {
+    background-color: black;
+    color: #c0bab3;
+}
+
 .rejilla-servicios {
     display: flex;
     justify-content: space-evenly;
@@ -230,4 +240,8 @@ tbody tr:nth-child(odd) {
     background-color: white;
     padding: 3rem;
     border-radius: 0.8rem;
+}
+
+.campo input:focus {
+    outline: 3px solid green;
 }
