@@ -29,7 +29,7 @@ h3 {
 body {
     font-size: 1.6rem;
     line-height: 1.6;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Nunito', Arial;
     padding: 3.0rem;
     justify-content: center;
     background-color: #FBF8F3;
@@ -37,7 +37,7 @@ body {
 
 h1, h2, h3 {
     line-height: 1.2;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Playfair Display', sans-serif, Arial;
     color: #593528;
 }
 
@@ -80,6 +80,15 @@ h1, h2, h3 {
 
 .menu-principal a {
     text-decoration: none; /*Quita el la linea inflerior del link*/
+    text-transform: uppercase;
+    color: black;
+}
+
+.menu-principal a:hover {
+    padding: 0.9rem;
+    border-radius: 0.8rem;
+    background-color: #F1EAE0;
+    color: #A6572F;
 }
 
 #portada {
