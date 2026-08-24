@@ -30,9 +30,112 @@ body {
     font-size: 1.6rem;
     line-height: 1.6;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 3.0rem;
+    justify-content: center;
+    background-color: #FBF8F3;
 }
 
 h1, h2, h3 {
     line-height: 1.2;
     font-family: Arial, Helvetica, sans-serif;
+    color: #593528;
+}
+
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem;
+    position: sticky;
+    z-index: 100;
+    background-color: white;
+}
+
+
+
+#pie {
+    background-color: #593528;
+    padding: 3rem 10rem 2rem;
+    color: white;
+}
+
+#pie a {
+    color: white;
+}
+
+.creditos {
+    text-align: center;
+}
+
+.datos-contacto, #servicios > h2, #historia > h2, #existencias > h2, #categorias > h2, #pedido > h2 {
+    border-bottom: 2px solid #F1EAE0; /*borde inferior que sirve de separación*/
+}
+
+.menu-principal ul {
+    display: flex;
+    justify-content: space-evenly; /*da el mismo espacio entre elementos ademas de alrededor de los mismos*/
+    gap: 1.6rem;
+    list-style: none; /*Quita el punto de la lista*/
+}
+
+.menu-principal a {
+    text-decoration: none; /*Quita el la linea inflerior del link*/
+}
+
+#portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 5rem;
+    background-color: #7E4225;
+    padding: 2rem;
+}
+
+#portada p, #portada h2 {
+    max-width: 65ch; /*evita que el texto se pase de 65 caracteres mejorando la legibilidad*/
+    color: white;
+}
+
+.boton {
+    padding: 0.9rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    background-color: #A6572F;
+    color: white;
+}
+
+.boton:hover {
+    background-color: white;
+    color: #A6572F;
+}
+
+.boton:focus {
+    outline: 3px dashed white;
+}
+
+.rejilla-servicios {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+.tarjeta {
+    padding: 2rem;
+    border-radius: 0.8rem;
+    background-color: white;
+}
+
+.tabla-catalogo th {
+    padding: 1rem;
+}
+
+thead tr {
+    background-color: #5B3A29;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
 }
