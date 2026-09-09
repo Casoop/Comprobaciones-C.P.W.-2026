@@ -621,23 +621,53 @@ img {
 
 /*Vista Telefono: tamaños menores a 767px*/
 @media (max-width: 767px) {
+  /*header*/
+  .cabecera {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*footer*/
+  .pie-columnas {
+    flex-direction: column;
+  }
+  
+  /*Index.html*/
   .rejilla-galeria {
     grid-template-columns: 1fr;
+  }
+
+  /*cursos.html*/
+  .dos-columnas {
+    flex-direction: column;
   }
 }
 
 /*Vista Tablet: tamaños superiores a 768px*/
 @media (min-width: 768px) {
+  /*footer*/
+  .pie-columnas {
+    flex-direction: row;
+  }
+
+  /*Index.html*/
   .rejilla-galeria {
     grid-template-columns: 1fr 1fr;
   }
+
+  /*cursos.html*/
+  .dos-columnas {
+    flex-direction: row;
+  }
 }
 
-/*Vista Telefono: tamaños superiores a 1024px*/
+/*Vista Escritorio: tamaños superiores a 1024px*/
 @media (min-width: 1024px) {
+  /*index.html*/
   .rejilla-galeria {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+  }
 }
   
 @media print { /*Nota: este es el unico distinto al del ancho del que me acorde*/
