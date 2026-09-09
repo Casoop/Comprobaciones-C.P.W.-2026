@@ -75,7 +75,7 @@ img {
 
 /* ─── CONTENEDORES ───────────────────────────────────────────────────── */
 .seccion {
-  max-width: 1180px;
+  max-width: 1180px; /*Al cambiar width por max with el contenedor puede escalar segun su tamaño disponible sin estar atado a un tamaño fijo*/
   margin-left: auto;
   margin-right: auto;
   padding: 90px 30px;
