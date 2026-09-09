@@ -68,8 +68,9 @@ a {
 }
 
 img {
+  height: auto;
+  max-width: 100%;
   display: block;
-
 }
 
 
@@ -215,10 +216,14 @@ img {
 /* ─── TARJETAS · Flexbox ─────────────────────────────────────────────── */
 .fila-propuestas {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center; /*Para centrar el contenido del flex*/
+  justify-content: center; /*Para centrar el contenido del flex*/
   gap: 2.6rem;
 }
 
 .tarjeta {
+  flex: 1 1 35rem; /*flex de tarjetas*/
   max-width: 36rem;
   background-color: var(--blanco);
   padding: 2.8rem;
@@ -374,7 +379,6 @@ img {
   font-size: 1.5rem;
   border-top: 0.2rem solid var(--verde);
 }
-
 
 /* ─── DOS COLUMNAS · Flexbox ─────────────────────────────────────────── */
 .dos-columnas {
