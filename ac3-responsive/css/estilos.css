@@ -703,6 +703,8 @@ img {
   }
   
   .boton,
+  .indice,
+  .opcion-marca,
   .indice {
     display: none;
   }
