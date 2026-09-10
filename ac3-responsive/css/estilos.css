@@ -56,8 +56,9 @@ h1, h2, h3 {
   color: var(--verde);
 }
 
-h1 { font-size: 5.2rem; }
-h2 { font-size: 3.4rem; }
+/*Tamaño de fuente movil: ayuda a evitar el desborbamiento del h1 en la sección contacto*/
+h1 { font-size: 3.0rem; }
+h2 { font-size: 2.6rem; }
 h3 { font-size: 2.2rem; }
 
 p { margin-bottom: 1.8rem; }
@@ -79,7 +80,7 @@ img {
   max-width: 118rem; /*Al cambiar width por max with el contenedor puede escalar segun su tamaño disponible sin estar atado a un tamaño fijo*/
   margin-left: auto;
   margin-right: auto;
-  padding: 9.0rem 3.0rem;
+  padding: 4.6rem 1.6rem; /*Se cambia por un tamaño menor para provechar de mejor manera el espacio en pantallas pequeñas*/
 }
 
 .seccion-alterna {
@@ -380,6 +381,11 @@ img {
   border-top: 0.2rem solid var(--verde);
 }
 
+.tabla-contenedor {
+  overflow-x: auto; /*Permite que la tabla pueda tener un slider interno en caso de que no sea posible mostrarla dentro del la anchura del contenedor*/
+  width: 100%;
+}
+
 /* ─── DOS COLUMNAS · Flexbox ─────────────────────────────────────────── */
 .dos-columnas {
   display: flex;
@@ -454,8 +460,8 @@ img {
 .grupo {
   border: 0.1rem solid var(--linea);
   border-radius: var(--radio);
-  padding: 2.6rem;
-  margin-bottom: 2.6rem;
+  padding: 1.4rem; /*Se reduce en pro de tener campos de entrada con un tamaño mayor para el usuario*/
+  margin-bottom: 1.4rem; /*Acompaña a la modificación anterior*/
   background-color: var(--blanco);
 }
 
@@ -514,8 +520,8 @@ img {
 }
 
 .opcion-marca {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 3.0rem;/*Se cambia el tamaño del boton para ser mas comodo de utilizar en una pantalla pequeña*/
+  height: 3.0rem;
   accent-color: var(--terracota);
   cursor: pointer;
 }
@@ -646,6 +652,16 @@ img {
 
 /*Vista Tablet: tamaños superiores a 768px*/
 @media (min-width: 768px) {
+  /*Tamaño de fuentes*/
+  h1 { font-size: 5.2rem; }
+  h2 { font-size: 3.4rem; }
+  h3 { font-size: 2.2rem; }
+
+  /*Padding orginal para pantallas grandes*/
+  .seccion {
+  padding: 9.0rem 3.0rem;
+  }
+  
   /*footer*/
   .pie-columnas {
     flex-direction: row;
@@ -659,6 +675,17 @@ img {
   /*cursos.html*/
   .dos-columnas {
     flex-direction: row;
+  }
+
+  /*contacto.html*/
+  .grupo {
+  padding: 2.6rem;
+  margin-bottom: 2.6rem;
+  }
+
+  .opcion-marca {
+  width: 1.8rem;
+  height: 1.8rem;
   }
 }
 
@@ -676,6 +703,8 @@ img {
   }
   
   .boton,
+  .indice,
+  .opcion-marca,
   .indice {
     display: none;
   }
