@@ -380,6 +380,11 @@ img {
   border-top: 0.2rem solid var(--verde);
 }
 
+.tabla-contenedor {
+  overflow-x: auto; /*Permite que la tabla pueda tener un slider interno en caso de que no sea posible mostrarla dentro del la anchura del contenedor*/
+  width: 100%;
+}
+
 /* ─── DOS COLUMNAS · Flexbox ─────────────────────────────────────────── */
 .dos-columnas {
   display: flex;
