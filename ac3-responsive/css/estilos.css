@@ -520,8 +520,8 @@ img {
 }
 
 .opcion-marca {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 3.0rem;/*Se cambia el tamaño del boton para ser mas comodo de utilizar en una pantalla pequeña*/
+  height: 3.0rem;
   accent-color: var(--terracota);
   cursor: pointer;
 }
@@ -681,6 +681,11 @@ img {
   .grupo {
   padding: 2.6rem;
   margin-bottom: 2.6rem;
+  }
+
+  .opcion-marca {
+  width: 1.8rem;
+  height: 1.8rem;
   }
 }
 
